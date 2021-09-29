@@ -1,0 +1,128 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: medium;
+  margin: 0 auto;  
+  width: 80%;
+}
+
+h1 {
+  margin-top: 2em;
+  font-size: 32px;
+}
+
+h2 {
+  margin-top: 2em;  
+}
+
+h3 {
+  margin-top: 1.75em;  
+}
+
+h4 {
+  margin-top: 1.5em;
+}
+
+p, ol, ul, blockquote {  
+  line-height: 150%;
+}
+
+p , h1, h2, h3, h4{
+  text-indent: 4%;
+}
+
+.bold {
+  font-weight: 1000;
+}
+
+.image-caption {  
+  font-size: smaller;
+  font-style: italic; 
+}
+
+.image {
+  max-width: 100%;
+}
+
+.image-flag {  
+  height: 1em;
+  margin-right: 0.5%;
+}
+
+table.info {
+  width: 35%;
+  float: right;
+  clear: right;
+  left: 100%;
+  border: 1px rgb(197, 197, 197) solid;
+  padding: 5px;
+  margin-left: 2%;
+  margin-bottom: 2%;
+  background-color: rgb(247, 247, 247);
+}
+
+td {
+  padding: 3px;
+}
+
+.arrow-dw,
+.arrow-up,
+.arrow-fw {
+  font-weight: 700;
+  padding-right: 2px;
+}
+
+.arrow-dw {
+  color: rgb(201, 0, 0);
+}
+
+.arrow-up {
+  color: rgb(0, 167, 0);
+}
+
+blockquote {
+  position: relative;
+  margin: 0;
+  padding: 0 42px;
+  border: none;
+  background: transparent;
+  line-height: 1.6em;
+  font-style: italic;
+}
+
+blockquote::before, blockquote::after {
+  content: '';
+  display: inline-block;  
+  position: absolute;
+  background-size: calc(1.6em / 0.75) 1.6em;
+  background-repeat: no-repeat;
+  width: calc(1.6em / 0.75);
+  height: 1.6em;
+}
+
+blockquote::before {
+  background-image: url('../img/quote1.png');
+  top: 0;
+  left: 0;
+}
+
+blockquote::after {
+  background-image: url('../img/quote2.png');
+  bottom: 0;
+  right: 0;
+}
+
+cite {
+  display: block;
+  text-align: right;
+  font-style: normal;
+}
+
+.txt-center {
+  text-align: center;
+}
+
+.line {
+  border-width: 0;  
+  border-top: solid;
+  font-size: 40%;
+}
