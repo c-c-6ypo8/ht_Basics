@@ -1,7 +1,7 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
   font-size: medium;
-  margin: 0 auto;  
+  margin: 0 auto;
   width: 80%;
 }
 
@@ -11,22 +11,29 @@ h1 {
 }
 
 h2 {
-  margin-top: 2em;  
+  margin-top: 2em;
 }
 
 h3 {
-  margin-top: 1.75em;  
+  margin-top: 1.75em;
 }
 
 h4 {
   margin-top: 1.5em;
 }
 
-p, ol, ul, blockquote {  
+p,
+ol,
+ul,
+blockquote {
   line-height: 150%;
 }
 
-p , h1, h2, h3, h4{
+p,
+h1,
+h2,
+h3,
+h4 {
   text-indent: 4%;
 }
 
@@ -34,22 +41,23 @@ p , h1, h2, h3, h4{
   font-weight: 1000;
 }
 
-.image-caption {  
-  font-size: smaller;
-  font-style: italic; 
+.image-caption {
+  font-style: italic;
+  font-size: smaller;  
 }
 
 .image {
   max-width: 100%;
 }
 
-.image-flag {  
+.image-flag {
   height: 1em;
   margin-right: 0.5%;
 }
 
 table.info {
   width: 35%;
+  max-width: 500px;
   float: right;
   clear: right;
   left: 100%;
@@ -60,8 +68,35 @@ table.info {
   background-color: rgb(247, 247, 247);
 }
 
-td {
+table.stat {
+  margin-top: 1em;
+  margin-bottom: 1em;
+  border: 1px solid #a2a9b1;
+  border-collapse: collapse;
+}
+
+td,
+th {
   padding: 3px;
+  vertical-align: middle;
+}
+
+th {
+  background-color: #cbeef8;
+  vertical-align: middle;
+}
+
+table.stat th,
+table.stat td {
+  border: 1px solid #a2a9b1;
+  padding: 0.3em 0.5em;
+  text-align: center;
+  vertical-align: bottom;
+}
+
+table.info th,
+table.info td {
+  width: 50%;
 }
 
 .arrow-dw,
@@ -69,6 +104,7 @@ td {
 .arrow-fw {
   font-weight: 700;
   padding-right: 2px;
+  vertical-align: inherit;
 }
 
 .arrow-dw {
@@ -89,9 +125,10 @@ blockquote {
   font-style: italic;
 }
 
-blockquote::before, blockquote::after {
+blockquote::before,
+blockquote::after {
   content: '';
-  display: inline-block;  
+  display: inline-block;
   position: absolute;
   background-size: calc(1.6em / 0.75) 1.6em;
   background-repeat: no-repeat;
@@ -122,7 +159,7 @@ cite {
 }
 
 .line {
-  border-width: 0;  
+  border-width: 0;
   border-top: solid;
   font-size: 40%;
 }
