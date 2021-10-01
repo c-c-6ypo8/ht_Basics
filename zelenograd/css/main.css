@@ -73,6 +73,7 @@ table.stat {
   margin-bottom: 1em;
   border: 1px solid #a2a9b1;
   border-collapse: collapse;
+  max-width: 800px;
 }
 
 td,
