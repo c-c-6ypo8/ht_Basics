@@ -108,6 +108,12 @@ body {
   margin: auto;
 }
 
+.logo-inline {
+  float: left;
+  margin-top: 30px;
+  margin-right: 35px;
+}
+
 .user {
   display: inline-block;
   width: 30%;
