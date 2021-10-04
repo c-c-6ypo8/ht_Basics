@@ -1,11 +1,48 @@
 * {
   --main-color: #007765;
   --max-width: 1219px;
+  --header-height: 84px;
+  --footer-height: 176px;
 }
 
 body {
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
+}
+
+.block-header {
+  background-color: var(--main-color);
+  padding: 0 55px;  
+  display: flex;
+  position: sticky;
+  top: 0px;
+  height: var(--header-height);
+}
+
+.header-image {
+  margin: auto;
+  margin-left: 0;
+}
+
+.header-link-block {  
+  margin: auto;  
+  margin-right: 0;
+}
+
+.header-link {
+  color: white;
+  display: inline-block;  
+  font-size: 24px;
+  font-weight: 500;
+  text-decoration: none;
+  margin: 4px;
+}
+
+.anchor {
+  position: relative;
+  top: calc(var(--header-height) * -1 / 2);
+  display: block;
+  visibility: hidden;
 }
 
 .content-color-1 {
@@ -18,15 +55,14 @@ body {
 
 .block-team,
 .block-desc,
-.block-problem,
-.picture-text {  
+.block-problem {
   margin: 0 auto;
 }
 
 .block-desc,
 .block-problem,
 .block-team {
-  max-width: var(--max-width);  
+  max-width: var(--max-width);
   padding: 55px;
 }
 
@@ -39,20 +75,21 @@ body {
   color: white;
   font-weight: 500;
   text-align: center;
-  height: 403px;    
+  height: 403px;
+  display: flex;
 }
 
 .block-header-pic {
   background: url(../img/header.png);
-  font-size: 72px;  
+  font-size: 72px;
   background-repeat: no-repeat;
-  background-size: cover; 
+  background-size: cover;
 }
 
 .block-middle-pic {
   background: url(../img/middle.png);
   font-size: 48px;
-  font-style: italic;  
+  font-style: italic;
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -67,10 +104,8 @@ body {
 }
 
 .picture-text {
-  width: calc(0.73 * var(--max-width));  
-  display: inline-block;
-  vertical-align: middle;
-  height: fit-content;
+  max-width: calc(0.73 * var(--max-width));  
+  margin: auto;
 }
 
 .user {
@@ -91,15 +126,29 @@ body {
   font-size: 18px;
 }
 
+.block-footer {
+  background-color: #333;
+  padding: 0 55px;  
+  display: flex;
+  position: sticky;
+  top: 0px;
+  height: var(--footer-height);
+}
+
+.footer-text {
+  margin: auto;
+  width: 60%;
+  text-align: center;
+  color: white;
+  font-size: 18px;
+  font-weight: 400;
+}
+
 .title {
   color: var(--main-color);
   font-size: 64px;
   text-align: center;
-  font-weight: 700;  
-}
-
-.title-table {
-  padding-bottom: 1em;
+  font-weight: 700;
 }
 
 p {
