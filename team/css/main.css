@@ -19,7 +19,7 @@ body {
   height: var(--header-height);
 }
 
-.header-image {
+.header-logo {
   margin: auto;
   margin-left: 0;
 }
@@ -56,13 +56,9 @@ body {
 .block-team,
 .block-desc,
 .block-problem {
-  margin: 0 auto;
-}
-
-.block-desc,
-.block-problem,
-.block-team {
+  box-sizing: border-box;
   max-width: var(--max-width);
+  margin: auto;
   padding: 55px;
 }
 
@@ -75,8 +71,8 @@ body {
   color: white;
   font-weight: 500;
   text-align: center;
-  height: 403px;
-  display: flex;
+  padding-top: 128px;
+  padding-bottom: 128px;  
 }
 
 .block-header-pic {
@@ -84,6 +80,7 @@ body {
   font-size: 72px;
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center center;
 }
 
 .block-middle-pic {
@@ -92,6 +89,7 @@ body {
   font-style: italic;
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: center center;
 }
 
 .block-team {
