@@ -118,10 +118,10 @@ body {
 }
 
 .user {
-  /* display: inline-block; */  
   flex-basis: 33%;  
   text-align: center;
-  margin: 40px 0px;
+  padding: 40px;
+  box-sizing: border-box;
 }
 
 .user-name {
