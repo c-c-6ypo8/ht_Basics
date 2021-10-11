@@ -1,0 +1,42 @@
+body {
+  font-family: "Roboto", sans-serif;  
+}
+
+.navbar {
+  height: 56px;    
+}
+
+.nav-link, .nav-item, .nav-link:focus {
+  color: var(--light) !important;  
+}
+
+.nav-link:hover {  
+  color: rgb(201, 201, 201) !important;
+}
+
+.nav-link, .nav-item {
+  margin: auto 0;
+}
+
+.lead {
+  line-height: 1.2; 
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.jumbotron, .info {
+  padding-left: 55px;
+  padding-right: 55px;  
+}
+
+.jumbo-limiter {
+  display: inline-block;
+  max-width: 635px;
+}
+
+.btn {
+  font-size: 20px;
+  padding: 9px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
