@@ -1,37 +1,38 @@
 body {
-  font-family: "Roboto", sans-serif;  
+  font-family: 'Roboto', sans-serif;  
 }
 
-.navbar {
-  height: 56px;    
+.nav-link,
+.nav-item,
+.nav-link:focus {
+  color: var(--light) !important;
 }
 
-.nav-link, .nav-item, .nav-link:focus {
-  color: var(--light) !important;  
-}
-
-.nav-link:hover {  
+.nav-link:hover {
   color: rgb(201, 201, 201) !important;
 }
 
-.nav-link, .nav-item {
+.nav-link,
+.nav-item {
   margin: auto 0;
 }
 
 .lead {
-  line-height: 1.2; 
+  line-height: 1.2;
   font-size: 16px;
   font-weight: 400;
 }
 
-.jumbotron, .info {
+.jumbotron,
+.info,
+.footer {
   padding-left: 55px;
-  padding-right: 55px;  
+  padding-right: 55px;
+  border-radius: 0;
 }
 
-.jumbo-limiter {
-  display: inline-block;
-  max-width: 635px;
+.info {
+  margin-right: 0px;
 }
 
 .btn {
@@ -39,4 +40,38 @@ body {
   padding: 9px;
   padding-left: 20px;
   padding-right: 20px;
+}
+
+.card {
+  margin-bottom: 30px;
+}
+
+.works {
+  padding-bottom: 72px;
+}
+
+.works tbody {
+  color: var(--primary);
+}
+
+.works td:nth-child(2) {
+  color: var(--dark);
+}
+
+@media screen and (max-width: 576px) {
+  .display-3 {
+    font-size: 3em;
+  }
+
+  .works {
+    width: 100%;
+    overflow: scroll;
+  }
+}
+
+.footer {
+  color: #6c757d;
+  background-color: #f5f5f5;
+  padding-top: 1em;
+  padding-bottom: 1em;
 }
