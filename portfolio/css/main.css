@@ -18,32 +18,8 @@ body {
   font-weight: 400;
 }
 
-.jumbotron,
-.info,
-.footer {
-  padding-left: 55px;
-  padding-right: 55px;
+.jumbotron {  
   border-radius: 0;
-}
-
-.info {
-  margin-right: 0px;
-}
-
-.card {
-  margin-bottom: 30px;
-}
-
-.works {
-  padding-bottom: 72px;
-}
-
-.works tbody {
-  color: var(--primary);
-}
-
-.works td:nth-child(2) {
-  color: var(--dark);
 }
 
 @media screen and (max-width: 576px) {
