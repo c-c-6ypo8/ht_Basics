@@ -26,11 +26,6 @@ body {
   .display-3 {
     font-size: 3em;
   }
-
-  .works {
-    width: 100%;
-    overflow: scroll;
-  }
 }
 
 .footer {
