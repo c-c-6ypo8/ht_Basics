@@ -1,0 +1,6 @@
+.header {
+  box-shadow: 0 0 3px #b5b5b5;
+  position: sticky;    
+  display: flex;
+  padding: 15px 0px;
+}
