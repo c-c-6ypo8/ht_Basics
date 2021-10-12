@@ -57,12 +57,12 @@ h1, h2, h3, h4, h5, h6 {
 #cards {
   display: flex;
   flex-flow: row wrap;
-  justify-content: space-evenly;  
+  justify-content: space-between;  
+  gap: 1rem 0.5rem;
 }
 
 .card {
-  flex-basis: 33.3333%;
-  padding: 1rem;  
+  flex-basis: 32%;
 }
 
 .card-pic {
