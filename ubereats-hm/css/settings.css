@@ -2,13 +2,14 @@
   font-family: Roboto, 'Segoe UI', Oxygen, Ubuntu, Cantarell, 'Open Sans',
     -apple-system, BlinkMacSystemFont, 'Helvetica Neue', sans-serif;
   font-size: 16px;
-  font-weight: 400;  
+  font-weight: 400;
 
   --color-dark: #1d1d1d;
   --color-light: white;
-  --color-gray: #cfcfcf;
-  --color-lightgray: #dbdbdb;
+  --color-gray: #cacaca;
+  --color-lightgray: #ebebeb;
+  --color-darkgray: #949494;
   --color-placeholder: var(--color-gray);
-  --content-paddingx-lg: 81px;
-  --content-paddingx: 8px;
+  --container-padding-x: 8px;
+  --border-radius: 3px;
 }

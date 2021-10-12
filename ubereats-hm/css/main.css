@@ -1,21 +1,38 @@
-@import "reset.css";
+@import 'reset.css';
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
-@import "settings.css";
-@import "inputs.css";
+@import 'settings.css';
+@import 'inputs.css';
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-weight: 400;
 }
 
-.container {
-  padding: var(--content-paddingx);
+#nav,
+#footer {
+  max-width: 100%;
 }
 
 #nav {
   box-shadow: 0 0 0.33rem var(--color-gray);
   position: sticky;
+  top: 0px;
+  background-color: var(--color-light);
   padding-top: 1rem;
   padding-bottom: 1rem;
+  z-index: 1;
+}
+
+.container {
+  padding: 0 var(--container-padding-x);
+  margin: auto;
+}
+
+#nav-panel {
   display: flex;
   justify-content: space-between;
 }
@@ -25,7 +42,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #nav-cabinet {
-  display: flex;  
+  display: flex;
 }
 
 #search {
@@ -38,7 +55,7 @@ h1, h2, h3, h4, h5, h6 {
   width: 100%;
   outline: none;
   border: none;
-  border-bottom: 1px solid var(--color-placeholder);  
+  border-bottom: 1px solid var(--color-placeholder);
 }
 
 .nav-element {
@@ -48,31 +65,79 @@ h1, h2, h3, h4, h5, h6 {
 .button {
   border: 1px solid var(--color-gray);
   background-color: var(--color-light);
-  font-size: 0.75rem;
+  font-size: 0.8rem;
   font-weight: 600;
-  padding: 0.33rem 1rem;
-  border-radius: 3px;
+  padding: 0.55rem 1rem;
+  border-radius: var(--border-radius);
+}
+
+.button:hover {
+  background-color: var(--color-lightgray);
+}
+
+.button:active {
+  background-color: var(--color-gray);
 }
 
 #cards {
   display: flex;
   flex-flow: row wrap;
-  justify-content: space-between;  
+  justify-content: space-between;
   gap: 1rem 0.5rem;
 }
 
 .card {
-  flex-basis: 32%;
+  flex-basis: 32%;  
+}
+
+.card:hover {
+  background-color: var(--color-lightgray);
 }
 
 .card-pic {
   width: 100%;
+  border-radius: var(--border-radius);
+  overflow: hidden;
+}
+
+.card-pic img {
+  transition: 0.5s;
+  display: block;  
+  width: 100%;
+}
+
+.card-pic img:hover {
+  transform: scale(1.05);
+}
+
+.store-name {
+  margin-top: 0.9rem;
+}
+
+.store-type {
+  color: var(--color-darkgray);
+  font-size: 0.875rem;
+}
+
+.store-time {
+  font-size: 0.8125rem;
+}
+
+.store-name,
+.store-time,
+.store-type {
+  margin-bottom: 0.35rem;
 }
 
 @media screen and (min-width: 769px) {
   .container {
-    padding-left: var(--content-paddingx-lg);
-    padding-right: var(--content-paddingx-lg);
+    max-width: 1124px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .card {
+    flex-basis: calc(50% - 0.5rem);
   }
 }
 
