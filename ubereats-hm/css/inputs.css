@@ -1,0 +1,74 @@
+/* Placeholder color definition. Replace or define --color-placeholder with 
+your desired color */
+
+::-webkit-input-placeholder {
+  /* WebKit, Blink, Edge */
+  color: var(--color-placeholder);
+}
+:-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 */
+  color: var(--color-placeholder);
+  opacity: 1;
+}
+::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  color: var(--color-placeholder);
+  opacity: 1;
+}
+:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: var(--color-placeholder);
+}
+::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: var(--color-placeholder);
+}
+
+::placeholder {
+  /* Most modern browsers support this now. */
+  color: var(--color-placeholder);
+}
+
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+  color: var(--color-placeholder);
+}
+input:-moz-placeholder,
+textarea:-moz-placeholder {
+  color: var(--color-placeholder);
+}
+
+/* Placeholder fade transition. Replace .input with your input class */
+
+.input::-webkit-input-placeholder {
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+.input::-moz-placeholder {
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+.input:-moz-placeholder {
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+.input:-ms-input-placeholder {
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+.input:focus::-webkit-input-placeholder {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+.input:focus::-moz-placeholder {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+.input:focus:-moz-placeholder {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+.input:focus:-ms-input-placeholder {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}

@@ -1,6 +1,83 @@
-.header {
-  box-shadow: 0 0 3px #b5b5b5;
-  position: sticky;    
+@import "reset.css";
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import "settings.css";
+@import "inputs.css";
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 400;
+}
+
+.container {
+  padding: var(--content-paddingx);
+}
+
+#nav {
+  box-shadow: 0 0 0.33rem var(--color-gray);
+  position: sticky;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
   display: flex;
-  padding: 15px 0px;
+  justify-content: space-between;
+}
+
+#brand {
+  margin-left: 0;
+}
+
+#nav-cabinet {
+  display: flex;  
+}
+
+#search {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  width: 100%;
+}
+
+.search-input {
+  width: 100%;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid var(--color-placeholder);  
+}
+
+.nav-element {
+  margin: auto 0.9rem;
+}
+
+.button {
+  border: 1px solid var(--color-gray);
+  background-color: var(--color-light);
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 0.33rem 1rem;
+  border-radius: 3px;
+}
+
+#cards {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;  
+}
+
+.card {
+  flex-basis: 33.3333%;
+  padding: 1rem;  
+}
+
+.card-pic {
+  width: 100%;
+}
+
+@media screen and (min-width: 769px) {
+  .container {
+    padding-left: var(--content-paddingx-lg);
+    padding-right: var(--content-paddingx-lg);
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .card {
+    flex-basis: 100%;
+  }
 }

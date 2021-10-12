@@ -3,7 +3,6 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/main.css">
   <title>Рестораны UberEats</title>
@@ -11,13 +10,83 @@
 
 <body>
 
-  <div class="header">
-    <img src="assets/logo.svg" alt="">
+  <div id="nav" class="container">
+    <div class="nav-element" id="brand"><img src="assets/logo.svg"
+        alt="UberEats"></div>
+    <div id="nav-cabinet">
+      <input type="button" value="Войти" class="nav-element button">
+      <img src="assets/basket.svg" alt="Корзина" class="nav-element">
+    </div>
   </div>
 
-  <div class="restaurants"></div>
+  <div id="search" class="container">
+    <input class="input search-input" type="search" name="search-input-main"
+      id="search-input-main" placeholder="Поиск по ресторанам и кухням">
+  </div>
 
-  <div class="footer"></div>
+  <div id="stores" class="container">
+    <h2>Рестораны в Москве</h2>
+
+    <div id="cards">
+      <div class="card"><img class="card-pic" src="assets/stores/1.jpg"
+          alt="Макдональдс — Газетный">
+        <div class="store-name">Макдональдс Газетный</div>
+        <div class="store-type">₽₽ • Бургеры</div>
+        <div class="store-time">25 - 35 мин</div>
+      </div>
+      <div class="card"><img class="card-pic" src="assets/stores/1.jpg"
+          alt="Макдональдс — Газетный">
+        <div class="store-type">DimSum & Co — ЦДМ</div>
+        <div class="store-name">₽ • Японская • Китайская • Азиатская</div>
+        <div class="store-time">40 - 50 мин</div>
+      </div>
+      <div class="card"><img class="card-pic" src="assets/stores/1.jpg"
+          alt="Макдональдс — Газетный">
+        <div class="store-name">ДвижОК — Манежная</div>
+        <div class="store-type">₽ • Американская • Европейская </div>
+        <div class="store-time">35 - 45 мин</div>
+      </div>
+      <div class="card"><img class="card-pic" src="assets/stores/1.jpg"
+          alt="Макдональдс — Газетный">
+        <div class="store-name"></div>
+        <div class="store-type"></div>
+        <div class="store-time"></div>
+      </div>
+      <div class="card"><img class="card-pic" src="assets/stores/1.jpg"
+          alt="Макдональдс — Газетный">
+        <div class="store-name"></div>
+        <div class="store-type"></div>
+        <div class="store-time"></div>
+      </div>
+      <div class="card"><img class="card-pic" src="assets/stores/1.jpg"
+          alt="Макдональдс — Газетный">
+        <div class="store-name"></div>
+        <div class="store-type"></div>
+        <div class="store-time"></div>
+      </div>
+      <div class="card"><img class="card-pic" src="assets/stores/1.jpg"
+          alt="Макдональдс — Газетный">
+        <div class="store-name"></div>
+        <div class="store-type"></div>
+        <div class="store-time"></div>
+      </div>
+      <div class="card"><img class="card-pic" src="assets/stores/1.jpg"
+          alt="Макдональдс — Газетный">
+        <div class="store-name"></div>
+        <div class="store-type"></div>
+        <div class="store-time"></div>
+      </div>
+      <div class="card"><img class="card-pic" src="assets/stores/1.jpg"
+          alt="Макдональдс — Газетный">
+        <div class="store-name"></div>
+        <div class="store-type"></div>
+        <div class="store-time"></div>
+      </div>
+    </div>
+
+  </div>
+
+  <div id="footer" class="container"></div>
 
 </body>
 
