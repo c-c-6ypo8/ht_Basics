@@ -83,11 +83,13 @@ h6 {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
-  gap: 1rem 0.5rem;
+  gap: var(--flex-gap) calc(var(--flex-gap) / 2);
 }
 
 .card {
-  flex-basis: 32%;  
+  flex-basis: calc((100% - 2 * var(--flex-gap)) / 3) ;
+  text-decoration: none;
+  color: var(--color-dark);
 }
 
 .card:hover {
@@ -102,7 +104,6 @@ h6 {
 
 .card-pic img {
   transition: 0.5s;
-  display: block;  
   width: 100%;
 }
 

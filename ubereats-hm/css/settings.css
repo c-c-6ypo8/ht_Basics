@@ -3,7 +3,7 @@
     -apple-system, BlinkMacSystemFont, 'Helvetica Neue', sans-serif;
   font-size: 16px;
   font-weight: 400;
-
+  
   --color-dark: #1d1d1d;
   --color-light: white;
   --color-gray: #cacaca;
@@ -12,4 +12,7 @@
   --color-placeholder: var(--color-gray);
   --container-padding-x: 8px;
   --border-radius: 3px;
+  --flex-gap: 1rem;
+
+  color: var(--color-dark);
 }
