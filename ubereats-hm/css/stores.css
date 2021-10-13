@@ -1,0 +1,62 @@
+#stores-cards {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  gap: var(--flex-gap) calc(var(--flex-gap) / 2);
+}
+
+.stores-card {
+  flex-basis: calc((100% - 2 * var(--flex-gap)) / 3);
+  text-decoration: none;
+  color: var(--color-dark);
+}
+
+.stores-card:hover {
+  background-color: var(--color-lightgray);
+}
+
+.stores-card-pic {
+  width: 100%;
+  border-radius: var(--border-radius);
+  overflow: hidden;
+}
+
+.stores-card-pic img {
+  transition: 0.3s;
+  width: 100%;
+}
+
+.stores-card-pic img:hover {
+  transform: scale(1.03);
+}
+
+.store-name {
+  margin-top: 0.9rem;
+}
+
+.store-type {
+  color: var(--color-darkgray);
+  font-size: 0.875rem;
+}
+
+.store-time {
+  font-size: 0.8125rem;
+}
+
+.store-name,
+.store-time,
+.store-type {
+  margin-bottom: 0.35rem;
+}
+
+@media screen and (max-width: 768px) {
+  .stores-card {
+    flex-basis: calc(50% - 0.5rem);
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .stores-card {
+    flex-basis: 100%;
+  }
+}

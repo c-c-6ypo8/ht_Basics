@@ -1,0 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+@import 'universal/reset.css';
+@import 'universal/tricks.css';
+
+@import 'common.css';
+@import 'nav.css';
+@import 'search.css';
+@import 'stores.css';
+@import 'footer.css';

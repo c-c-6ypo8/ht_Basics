@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/!main.css">
   <title>Рестораны UberEats</title>
 </head>
 
@@ -12,12 +12,17 @@
 
   <div id="nav">
     <div id="nav-panel" class="container">
-      <div class="nav-element" id="brand"><img src="assets/logo.svg"
-          alt="UberEats"></div>
-      <div id="nav-cabinet">
-        <input type="button" value="Войти" class="nav-element button">
-        <img src="assets/basket.svg" alt="Корзина" class="nav-element">
+
+      <div class="nav-element" id="brand">
+        <img src="assets/header/logo.svg" alt="UberEats">
       </div>
+
+      <div id="nav-cabinet">
+        <input type="button" value="Войти"
+          class="nav-element button nav-button">
+        <img src="assets/header/basket.svg" alt="Корзина" class="nav-element">
+      </div>
+
     </div>
   </div>
 
@@ -29,10 +34,10 @@
   <div id="stores" class="container">
     <h2>Рестораны в Москве</h2>
 
-    <div id="cards">
+    <div id="stores-cards">
 
-      <a href="restaurant.html" class="card">
-        <div class="card-pic">
+      <a href="restaurant.html" class="stores-card">
+        <div class="stores-card-pic">
           <img src="assets/stores/1.jpg" alt="Макдональдс — Газетный">
         </div>
         <div class="store-name">Макдональдс Газетный</div>
@@ -40,8 +45,8 @@
         <div class="store-time">25 - 35 мин</div>
       </a>
 
-      <a href="restaurant.html" class="card">
-        <div class="card-pic">
+      <a href="restaurant.html" class="stores-card">
+        <div class="stores-card-pic">
           <img src="assets/stores/2.jpg" alt="DimSum & Co — ЦДМ">
         </div>
         <div class="store-name">DimSum & Co — ЦДМ</div>
@@ -49,8 +54,8 @@
         <div class="store-time">40 - 50 мин</div>
       </a>
 
-      <a href="restaurant.html" class="card">
-        <div class="card-pic">
+      <a href="restaurant.html" class="stores-card">
+        <div class="stores-card-pic">
           <img src="assets/stores/3.jpg" alt="ДвижОК — Манежная">
         </div>
         <div class="store-name">ДвижОК — Манежная</div>
@@ -58,8 +63,8 @@
         <div class="store-time">35 - 45 мин</div>
       </a>
 
-      <a href="restaurant.html" class="card">
-        <div class="card-pic">
+      <a href="restaurant.html" class="stores-card">
+        <div class="stores-card-pic">
           <img src="assets/stores/4.jpg" alt="НЯ — NHA">
         </div>
         <div class="store-name">НЯ — NHA</div>
@@ -67,8 +72,8 @@
         <div class="store-time">30 - 40 мин</div>
       </a>
 
-      <a href="restaurant.html" class="card">
-        <div class="card-pic">
+      <a href="restaurant.html" class="stores-card">
+        <div class="stores-card-pic">
           <img src="assets/stores/5.jpg" alt="Точка Дзы — Цветной">
         </div>
         <div class="store-name">Точка Дзы — Цветной</div>
@@ -76,8 +81,8 @@
         <div class="store-time">40 - 50 мин</div>
       </a>
 
-      <a href="restaurant.html" class="card">
-        <div class="card-pic">
+      <a href="restaurant.html" class="stores-card">
+        <div class="stores-card-pic">
           <img src="assets/stores/6.jpg" alt="Cinnabon">
         </div>
         <div class="store-name">Cinnabon</div>
@@ -85,8 +90,8 @@
         <div class="store-time">25 - 35 мин</div>
       </a>
 
-      <a href="restaurant.html" class="card">
-        <div class="card-pic">
+      <a href="restaurant.html" class="stores-card">
+        <div class="stores-card-pic">
           <img src="assets/stores/7.jpg" alt="PIZZELOVE">
         </div>
         <div class="store-name">PIZZELOVE</div>
@@ -94,8 +99,8 @@
         <div class="store-time">15 - 25 мин</div>
       </a>
 
-      <a href="restaurant.html" class="card">
-        <div class="card-pic">
+      <a href="restaurant.html" class="stores-card">
+        <div class="stores-card-pic">
           <img src="assets/stores/8.jpg" alt="Zю кафе — Тверская">
         </div>
         <div class="store-name">Zю кафе — Тверская</div>
@@ -103,8 +108,8 @@
         <div class="store-time">25 - 35 мин</div>
       </a>
 
-      <a href="restaurant.html" class="card">
-        <div class="card-pic">
+      <a href="restaurant.html" class="stores-card">
+        <div class="stores-card-pic">
           <img src="assets/stores/9.jpg" alt="Bar BQ Cafe — Манежная">
         </div>
         <div class="store-name">Bar BQ Cafe — Манежная</div>
@@ -114,9 +119,30 @@
 
     </div>
 
+
   </div>
 
-  <div id="footer" class="container"></div>
+  <div id="footer">
+
+    <div class="container">
+      <img id="footer-logo" src="assets/footer/white-logo.svg" alt="UberEats">
+
+      <hr>
+
+      <div id="footer-links">
+        <div id="lang-selector-container">
+        <select name="country" id="lang-selector">
+            <option value="ru">Русский</option>
+            <option value="en">English</option>
+            <option value="ch">汉语</option>
+            <option value="jp">日本語</option>
+          </select>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
 
 </body>
 

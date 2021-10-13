@@ -1,0 +1,37 @@
+#nav,
+#footer {
+  max-width: 100%;
+}
+
+#nav {
+  box-shadow: 0 0 0.33rem var(--color-gray);
+  position: sticky;
+  top: 0px;
+  background-color: var(--color-light);
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  z-index: 10;
+}
+
+#nav-panel {
+  display: flex;
+  justify-content: space-between;
+}
+
+#brand {
+  margin-left: 0;
+}
+
+#nav-cabinet {
+  display: flex;
+}
+
+.nav-element {
+  margin: auto 0.9rem;
+}
+
+.nav-button {
+  font-size: 0.8rem;
+  font-weight: 600;
+  transition: 0.3s;
+}

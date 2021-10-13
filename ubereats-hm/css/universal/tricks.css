@@ -1,3 +1,5 @@
+/* * * * * Inputs tricks * * * * */
+
 /* Placeholder color definition. Replace or define --color-placeholder with 
 your desired color */
 
@@ -71,4 +73,27 @@ textarea:-moz-placeholder {
 .input:focus:-ms-input-placeholder {
   opacity: 0;
   transition: opacity 0.3s ease;
+}
+
+/* * * * * Animation tricks * * * * */
+
+/* Makes all objects 3D to act better in animations (apply only for 
+optimization! */
+/* * {
+  -webkit-transform: translateZ(0);
+  -webkit-font-smoothing: antialiased;
+  -moz-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  -o-transform: translateZ(0);
+  transform: translateZ(0);
+} */
+
+/* Makes images 3D to act better in animations */
+img {
+  /* -webkit-backface-visibility: hidden;  
+  -ms-transform: translateZ(0);
+  -webkit-transform: translateZ(0);
+  backface-visibility: hidden;
+  transform: translateZ(0); */
+  transform: rotate(0.00000000001deg);
 }
