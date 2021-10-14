@@ -10,35 +10,40 @@
 
 <body>
 
-  <div id="nav">
-    <div id="nav-panel" class="container">
+  <div class="nav">
+    <div class="nav-panel container">
 
-      <div class="nav-element" id="brand">
-        <img src="assets/header/logo.svg" alt="UberEats">
-      </div>
+      <a href="index.html">
+        <div class="nav-logo">
+          <img src="assets/header/logo.svg" alt="UberEats">
+        </div>
+      </a>
 
-      <div id="nav-cabinet">
+      <div class="nav-cabinet">
         <input type="button" value="Войти"
           class="nav-element button nav-button">
-        <img src="assets/header/basket.svg" alt="Корзина" class="nav-element">
+        <a href="#" class="icon-link nav-element">
+          <img src="assets/header/basket.svg" alt="Корзина">
+        </a>
       </div>
 
     </div>
   </div>
 
-  <div id="search" class="container">
+  <div class="search container">
     <input class="input search-input" type="search" name="search-input-main"
       id="search-input-main" placeholder="Поиск по ресторанам и кухням">
   </div>
 
-  <div id="stores" class="container">
+  <div class="container">
     <h2>Рестораны в Москве</h2>
 
-    <div id="stores-cards">
+    <div class="stores-cards">
 
       <a href="restaurant.html" class="stores-card">
         <div class="stores-card-pic">
-          <img src="assets/stores/1.jpg" alt="Макдональдс — Газетный">
+          <img class="transition-fix" src="assets/stores/1.jpg"
+            alt="Макдональдс — Газетный">
         </div>
         <div class="store-name">Макдональдс Газетный</div>
         <div class="store-type">₽₽ • Бургеры</div>
@@ -47,7 +52,8 @@
 
       <a href="restaurant.html" class="stores-card">
         <div class="stores-card-pic">
-          <img src="assets/stores/2.jpg" alt="DimSum & Co — ЦДМ">
+          <img class="transition-fix" src="assets/stores/2.jpg"
+            alt="DimSum & Co — ЦДМ">
         </div>
         <div class="store-name">DimSum & Co — ЦДМ</div>
         <div class="store-type">₽ • Японская • Китайская • Азиатская</div>
@@ -56,7 +62,8 @@
 
       <a href="restaurant.html" class="stores-card">
         <div class="stores-card-pic">
-          <img src="assets/stores/3.jpg" alt="ДвижОК — Манежная">
+          <img class="transition-fix" src="assets/stores/3.jpg"
+            alt="ДвижОК — Манежная">
         </div>
         <div class="store-name">ДвижОК — Манежная</div>
         <div class="store-type">₽ • Американская • Европейская </div>
@@ -65,7 +72,7 @@
 
       <a href="restaurant.html" class="stores-card">
         <div class="stores-card-pic">
-          <img src="assets/stores/4.jpg" alt="НЯ — NHA">
+          <img class="transition-fix" src="assets/stores/4.jpg" alt="НЯ — NHA">
         </div>
         <div class="store-name">НЯ — NHA</div>
         <div class="store-type">₽₽ • Вьетнамская</div>
@@ -74,7 +81,8 @@
 
       <a href="restaurant.html" class="stores-card">
         <div class="stores-card-pic">
-          <img src="assets/stores/5.jpg" alt="Точка Дзы — Цветной">
+          <img class="transition-fix" src="assets/stores/5.jpg"
+            alt="Точка Дзы — Цветной">
         </div>
         <div class="store-name">Точка Дзы — Цветной</div>
         <div class="store-type">₽₽ • Вьетнамская</div>
@@ -83,7 +91,7 @@
 
       <a href="restaurant.html" class="stores-card">
         <div class="stores-card-pic">
-          <img src="assets/stores/6.jpg" alt="Cinnabon">
+          <img class="transition-fix" src="assets/stores/6.jpg" alt="Cinnabon">
         </div>
         <div class="store-name">Cinnabon</div>
         <div class="store-type">₽ • Выпечка • Десерты • Капкейки</div>
@@ -92,7 +100,7 @@
 
       <a href="restaurant.html" class="stores-card">
         <div class="stores-card-pic">
-          <img src="assets/stores/7.jpg" alt="PIZZELOVE">
+          <img class="transition-fix" src="assets/stores/7.jpg" alt="PIZZELOVE">
         </div>
         <div class="store-name">PIZZELOVE</div>
         <div class="store-type">₽₽ • Пицца</div>
@@ -101,7 +109,8 @@
 
       <a href="restaurant.html" class="stores-card">
         <div class="stores-card-pic">
-          <img src="assets/stores/8.jpg" alt="Zю кафе — Тверская">
+          <img class="transition-fix" src="assets/stores/8.jpg"
+            alt="Zю кафе — Тверская">
         </div>
         <div class="store-name">Zю кафе — Тверская</div>
         <div class="store-type">₽₽ • Японская</div>
@@ -110,7 +119,8 @@
 
       <a href="restaurant.html" class="stores-card">
         <div class="stores-card-pic">
-          <img src="assets/stores/9.jpg" alt="Bar BQ Cafe — Манежная">
+          <img class="transition-fix" src="assets/stores/9.jpg"
+            alt="Bar BQ Cafe — Манежная">
         </div>
         <div class="store-name">Bar BQ Cafe — Манежная</div>
         <div class="store-type">₽₽₽ • Европейская</div>
@@ -122,23 +132,68 @@
 
   </div>
 
-  <div id="footer">
+  <div class="footer">
 
     <div class="container">
-      <img id="footer-logo" src="assets/footer/white-logo.svg" alt="UberEats">
+      <img class="footer-logo" src="assets/footer/white-logo.svg"
+        alt="UberEats">
 
-      <hr>
+      <hr class="footer-hr">
 
-      <div id="footer-links">
-        <div id="lang-selector-container">
-        <select name="country" id="lang-selector">
-            <option value="ru">Русский</option>
-            <option value="en">English</option>
-            <option value="ch">汉语</option>
-            <option value="jp">日本語</option>
-          </select>
+      <div class="footer-links">
+
+        <div class="footer-links-column">
+          <div class="lang-selector-container">
+            <select name="country" id="lang-selector" class="lang-selector">
+              <option value="ru">Русский</option>
+              <option value="en">English</option>
+              <option value="ch">汉语</option>
+              <option value="jp">日本語</option>
+            </select>
+          </div>
+          <div class="footer-link">
+            <a href="#" class="hashtag">UberEats</a>
+          </div>
+          <div class="socials-symbols">
+            <a href="#" class="icon-link">
+              <div>
+                <img src="assets/footer/facebook.svg" alt="Facebook">
+              </div>
+            </a>
+            <a href="#" class="icon-link">
+              <div>
+                <img src="assets/footer/twitter.svg" alt="Twitter">
+              </div>
+            </a>
+            <a href="#" class="icon-link">
+              <div>
+                <img src="assets/footer/instagram.svg" alt="Instagram">
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-links-column">
+          <div class="footer-link"><a href="#">Об UberEats</a></div>
+          <div class="footer-link"><a href="#">Станьте партнёром по доставке</a>
+          </div>
+          <div class="footer-link"><a href="#">Станьте партнёром-рестораном</a>
+          </div>
+        </div>
+
+        <div class="footer-links-column">
+          <div class="footer-link"><a href="#">Все города</a></div>
+          <div class="footer-link"><a href="#">Помощь</a></div>
+          <div class="footer-link"><a href="#">Цены</a></div>
+          <div class="footer-link"><a href="#">FAQs</a></div>
         </div>
       </div>
+
+      <hr class="footer-hr">
+
+
+
+      <hr class="footer-hr">
 
     </div>
 

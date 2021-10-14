@@ -1,9 +1,4 @@
-#nav,
-#footer {
-  max-width: 100%;
-}
-
-#nav {
+.nav {
   box-shadow: 0 0 0.33rem var(--color-gray);
   position: sticky;
   top: 0px;
@@ -11,19 +6,21 @@
   padding-top: 1rem;
   padding-bottom: 1rem;
   z-index: 10;
+  max-width: 100%;
 }
 
-#nav-panel {
+.nav-panel {
   display: flex;
   justify-content: space-between;
 }
 
-#brand {
-  margin-left: 0;
+.nav-logo {
+  padding: 0.8rem 0;
 }
 
-#nav-cabinet {
+.nav-cabinet {
   display: flex;
+  padding-right: 0.9rem;
 }
 
 .nav-element {
@@ -33,5 +30,4 @@
 .nav-button {
   font-size: 0.8rem;
   font-weight: 600;
-  transition: 0.3s;
 }

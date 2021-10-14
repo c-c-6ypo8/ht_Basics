@@ -31,6 +31,8 @@ h6 {
 
 a {
   text-decoration: none;
+  color: inherit;
+  transition: 0.3s;
 }
 
 .container {
@@ -41,8 +43,9 @@ a {
 .button {
   border: 1px solid var(--color-gray);
   background-color: var(--color-light);
-  padding: 0.55rem 1rem;
+  padding: 0.65rem 1.3rem;
   border-radius: var(--border-radius);
+  transition: 0.3s;
 }
 
 .button:hover {
@@ -53,6 +56,19 @@ a {
   background-color: var(--color-main);
   color: var(--color-lightgray);
   border-color: var(--color-main);
+}
+
+.icon-link {
+  position: relative;
+  transition: 0.2s;  
+}
+
+.icon-link:hover {  
+  transform: translateY(-3px);
+}
+
+.icon-link img {
+  
 }
 
 @media screen and (min-width: 769px) {

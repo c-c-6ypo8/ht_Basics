@@ -89,7 +89,7 @@ optimization! */
 } */
 
 /* Makes images 3D to act better in animations */
-img {
+.transition-fix {
   /* -webkit-backface-visibility: hidden;  
   -ms-transform: translateZ(0);
   -webkit-transform: translateZ(0);
