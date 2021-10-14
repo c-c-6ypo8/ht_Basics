@@ -30,8 +30,7 @@ dd {
 
 /* Set core body defaults */
 body {
-  min-height: 100vh;
-  scroll-behavior: smooth;
+  min-height: 100vh;  
   /* text-rendering: optimizeSpeed; */
   line-height: 1.5;
 }

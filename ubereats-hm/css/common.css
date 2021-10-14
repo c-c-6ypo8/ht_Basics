@@ -13,7 +13,7 @@
   --color-darkergray: #5c5c5c;
   --color-darkestgray: #3b3b3b;
   --color-placeholder: var(--color-gray);
-  --container-padding-x: 8px;
+  --container-padding-x: 0.5rem;
   --border-radius: 3px;
   --flex-gap: 1rem;
 
@@ -58,17 +58,30 @@ a {
   border-color: var(--color-main);
 }
 
-.icon-link {
-  position: relative;
-  transition: 0.2s;  
+.scroller div {
+  position: fixed;
+  bottom: 1.5rem;
+  right: 1rem;
+  z-index: 2;
+  width: 4rem;
+  height: 4rem;
+  background: var(--color-main) url(../assets/arrow-up.svg) no-repeat;  
+  background-position: center center;  
+  border-radius: 0.33rem;
+  display: block;
+  transition: 0.3s;
 }
 
-.icon-link:hover {  
-  transform: translateY(-3px);
+.scroller div:hover {
+  background-color: #4ccf53;
 }
 
-.icon-link img {
-  
+.scroller div:active {
+  background-color: #48b64d;
+}
+
+.hidden {
+  display: none;
 }
 
 @media screen and (min-width: 769px) {

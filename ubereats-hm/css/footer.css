@@ -21,8 +21,6 @@ hr {
 
 .footer-links {
   padding: 2rem 0;
-  color: var(--color-light);
-  font-size: small;
   display: flex;
   justify-content: space-between;
   column-gap: 2rem;
@@ -35,8 +33,17 @@ hr {
   flex-flow: column nowrap;
 }
 
-.footer-link {  
+.footer-link {
   padding: 0.5rem 0;
+  color: var(--color-light);
+  font-size: small;
+}
+
+.footer-legal {
+  font-size: 0.7rem;
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem 0;
 }
 
 .lang-selector {
@@ -74,7 +81,7 @@ hr {
 
 .hashtag {
   display: inline-block;
-  font-size: medium;  
+  font-size: medium;
 }
 
 .hashtag::before {
@@ -89,10 +96,6 @@ hr {
   padding-bottom: 1.3rem;
 }
 
-.socials-symbols div {
-  margin: 0.25rem;
-}
-
 .footer a {
   color: var(--color-light);
 }
@@ -103,6 +106,13 @@ hr {
 
 .footer a:active {
   color: var(--color-main);
+}
+
+.footer-dw-labels {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  padding: 2.5rem 0;
 }
 
 @media screen and (max-width: 768px) {
@@ -117,5 +127,8 @@ hr {
   }
   .footer-links-column {
     flex-basis: 100%;
+  }
+  .footer-legal {
+    flex-flow: column nowrap;
   }
 }

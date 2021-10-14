@@ -19,8 +19,7 @@
 }
 
 .nav-cabinet {
-  display: flex;
-  padding-right: 0.9rem;
+  display: flex;  
 }
 
 .nav-element {

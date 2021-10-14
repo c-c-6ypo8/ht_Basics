@@ -97,3 +97,8 @@ optimization! */
   transform: translateZ(0); */
   transform: rotate(0.00000000001deg);
 }
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
