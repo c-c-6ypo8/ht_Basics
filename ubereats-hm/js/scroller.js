@@ -1,21 +1,27 @@
-const unhidePoint = 1000;
-
+let unHidePosTop
 const scroller = document.getElementById('scroller')
+const scrollerUnHidePoint = document.getElementById('scrollerUnHidePoint')
 scroller.classList.add('hidden')
-console.log(scroller.getBoundingClientRect())
 
-window.onscroll = function () {
-  posLeft =
-    window.pageXOffset !== undefined
-      ? window.pageXOffset
-      : (document.documentElement || document.body.parentNode || document.body)
-          .scrollLeft
-  posTop =
-    window.pageYOffset !== undefined
-      ? window.pageYOffset
-      : (document.documentElement || document.body.parentNode || document.body)
-          .scrollTop
-  if (posTop > unhidePoint) {
+scrollPosTop = () => {
+  return window.pageYOffset ?? 0
+}
+
+const unHidePointPosTop = () => {
+  return scrollerUnHidePoint.getBoundingClientRect().top + scrollPosTop()
+}
+
+document.body.onload = () => {
+  unHidePosTop = unHidePointPosTop()
+}
+
+window.onresize = () => {
+  unHidePosTop = unHidePointPosTop()
+}
+
+window.onscroll = () => {
+  unHidePosTop = unHidePosTop ?? unHidePointPosTop()
+  if (scrollPosTop() + window.innerHeight > unHidePosTop) {
     scroller.classList.remove('hidden')
   } else {
     scroller.classList.add('hidden')
