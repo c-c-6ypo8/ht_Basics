@@ -1,3 +1,8 @@
+:root {
+  --flex-gap-rest-x: 0.75rem;
+  --flex-gap-rest-y: 3rem;  
+}
+
 .hero {
   /* max-width: var(--max-width); */
   height: 364px;
@@ -6,4 +11,128 @@
   background-position: center;
   padding: 0;
   margin: 0 auto;
+}
+
+.tabs {
+  margin-top: 2rem;  
+  display: flex;
+  flex-flow: row wrap;
+  column-gap: 2.5rem;
+  row-gap: 1rem;
+}
+
+.tabs > input[type='radio'] {
+  display: none;
+}
+
+.tabs:last-child {
+  flex-basis: 100%;
+}
+
+.tab-content {  
+  display: none;
+  margin-top: 2rem;
+  padding-top: 2rem;
+  border-top: 1px solid var(--color-lightgray);
+}
+
+#tab-btn-1:checked ~ .tab-contents #menu-1,
+#tab-btn-2:checked ~ .tab-contents #menu-2,
+#tab-btn-3:checked ~ .tab-contents #menu-3,
+#tab-btn-4:checked ~ .tab-contents #menu-4,
+#tab-btn-5:checked ~ .tab-contents #menu-5,
+#tab-btn-6:checked ~ .tab-contents #menu-6 {
+  display: block;  
+  animation: fadein 1s;
+}
+
+@keyframes fadein {
+  from {
+      opacity:0;
+  }
+  to {
+      opacity:1;
+  }
+}
+
+.tabs > label {
+  text-align: center;
+  vertical-align: middle;
+  user-select: none;
+  transition: 0.15s ease-out;  
+  cursor: pointer;  
+}
+
+.tabs > label:hover {
+  color: var(--color-darkgray);
+}
+
+.tabs > input[type='radio']:checked + label {
+  color: #4ca149;
+}
+
+h2 {
+  margin-bottom: 2rem;
+}
+
+.dish-cards {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  gap: var(--flex-gap-rest-y) var(--flex-gap-rest-x);
+}
+
+.dish-card {
+  border: 1px solid var(--color-lightgray);
+  height: var(--card-rest-height);
+  display: flex;
+  flex-basis: calc(50% - 0.75rem);
+  border-radius: var(--border-radius);
+  overflow: hidden;
+}
+
+.dish-card:hover {
+  background-color: var(--color-lightergray);
+}
+
+.dish-desc {
+  padding: 1rem;
+  width: 100%;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+}
+
+.dish-name-sub {
+  font-size: 0.8125rem;
+  color: var(--color-darkgray);
+}
+
+.dish-price {
+  font-weight: 600;
+}
+
+.dish-price::after {
+  content: ' ₽';
+}
+
+.dish-pic {
+  height: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  .dish-card {
+    flex-basis: 100%;
+  }
+
+  .dish-cards {
+    gap: calc(var(--flex-gap-rest-y) / 2);
+  }
+
+  .tabs {
+    height: calc(
+      var(--card-rest-height) * 6 + var(--flex-gap-rest-y) * 5 +
+        var(--tabs-margin-top)
+    );
+  }
 }

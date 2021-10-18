@@ -1,25 +1,25 @@
 :root {
-  font-family: Roboto, 'Segoe UI', Oxygen, Ubuntu, Cantarell, 'Open Sans',
-    -apple-system, BlinkMacSystemFont, 'Helvetica Neue', sans-serif;
-  font-size: 16px;
-  font-weight: 400;
-
+  --font-size: 16px;
   --color-main: #5cbc61;
   --color-dark: #262626;
   --color-light: white;
-  --color-lightgray: #f9f9f9;
+  --color-lightergray: #f9f9f9;  
+  --color-lightgray: #efefef;  
   --color-gray: #cacaca;
   --color-darkgray: #8a8a8a;
   --color-darkergray: #5c5c5c;
   --color-darkestgray: #3b3b3b;
   --color-placeholder: var(--color-gray);
-  --container-padding-x: 0.5rem;  
+  --container-padding-x: 0.5rem;
   --border-radius: 3px;
-  --flex-gap: 1rem;
   --scroller-size: 80px;
   --scroller-size-small: 64px;
   --max-width: 1124px;
 
+  font-family: Roboto, 'Segoe UI', Oxygen, Ubuntu, Cantarell, 'Open Sans',
+    -apple-system, BlinkMacSystemFont, 'Helvetica Neue', sans-serif;
+  font-weight: 400;
+  font-size: var(--font-size);
   color: var(--color-dark);
 }
 
@@ -40,7 +40,7 @@ a {
 
 .container {
   padding: 0 var(--container-padding-x);
-  margin: auto;  
+  margin: auto;
 }
 
 .button {
@@ -67,9 +67,9 @@ a {
   right: 1rem;
   z-index: 2;
   width: var(--scroller-size);
-  height: var(--scroller-size);  
-  background: var(--color-main) url(../assets/arrow-up.svg) no-repeat;  
-  background-position: center center;  
+  height: var(--scroller-size);
+  background: var(--color-main) url(../assets/arrow-up.svg) no-repeat;
+  background-position: center center;
   border-radius: 0.33rem;
   display: block;
   transition: 0.3s;
@@ -89,12 +89,12 @@ a {
 
 @media screen and (min-width: 769px) {
   .container {
-    max-width: var(--max-width);        
-  }  
+    max-width: var(--max-width);
+  }
 }
 
 @media screen and (max-width: 576px) {
-  .scroller-area {    
+  .scroller-area {
     width: var(--scroller-size-small);
     height: var(--scroller-size-small);
   }

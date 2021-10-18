@@ -1,8 +1,13 @@
+:root {
+  --flex-gap-stores-y: 1rem;
+  --flex-gap-stores-x: 0.5rem;
+}
+
 .stores-cards {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
-  gap: var(--flex-gap) calc(var(--flex-gap) / 2);
+  gap: var(--flex-gap-stores-y) var(--flex-gap-stores-x);
 }
 
 .stores-card {
@@ -12,7 +17,7 @@
 }
 
 .stores-card:hover {
-  background-color: var(--color-lightgray);
+  background-color: var(--color-lightergray);
 }
 
 .stores-card-pic {

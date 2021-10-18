@@ -5,7 +5,7 @@
   background-color: var(--color-light);
   padding-top: 1rem;
   padding-bottom: 1rem;
-  z-index: 10;
+  z-index: 100;
   max-width: 100%;
 }
 
