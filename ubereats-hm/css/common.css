@@ -13,7 +13,7 @@
   --color-darkergray: #5c5c5c;
   --color-darkestgray: #3b3b3b;
   --color-placeholder: var(--color-gray);
-  --container-padding-x: 0.5rem;
+  --container-padding-x: 0.5rem;  
   --border-radius: 3px;
   --flex-gap: 1rem;
   --scroller-size: 80px;
@@ -89,8 +89,7 @@ a {
 
 @media screen and (min-width: 769px) {
   .container {
-    max-width: var(--max-width);
-    padding: 0 var(--container-padding);
+    max-width: var(--max-width);        
   }  
 }
 

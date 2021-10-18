@@ -1,5 +1,5 @@
 .hero {
-  max-width: var(--max-width);
+  /* max-width: var(--max-width); */
   height: 364px;
   background: url(../assets/restaurant/s-header.jpg) no-repeat;
   background-size: cover;
