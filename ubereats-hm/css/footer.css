@@ -37,7 +37,7 @@ hr {
 .footer-link {
   padding: 0.5rem 0;
   color: var(--color-light);
-  font-size: small;
+  font-size: 0.8125rem;
 }
 
 .footer-legal {
@@ -52,13 +52,13 @@ hr {
   border-color: var(--color-darkestgray);
   color: var(--color-light);
   font-size: 0.8rem;
-  padding: 0.7rem 4.5rem 0.7rem 3rem;
+  padding: 10px 70px 10px 50px;
   background: url(../assets/arrow-down.svg) 93% / 8% no-repeat
     var(--color-darkestgray);
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  width: 227px;
+  width: 12rem;
 }
 
 .lang-selector:focus {
@@ -66,18 +66,20 @@ hr {
 }
 
 .lang-selector-container {
-  position: relative;
+  display: flex;  
+  align-items: center;
   width: fit-content;
-  padding-bottom: 1.5rem;
+  margin-bottom: 1.5rem;  
 }
 
 .lang-selector-container::before {
   content: url(../assets/footer/world.svg);
   pointer-events: none;
-  position: absolute;
-  left: 1.1rem;
-  top: 0.9rem;
-  z-index: 1;
+  /* position: absolute;
+  left: 10%;
+  top: 20%;
+  z-index: 1; */
+  position: relative;  
 }
 
 .hashtag {
@@ -117,9 +119,9 @@ hr {
 }
 
 @media screen and (max-width: 768px) {
-  .lang-selector {
+  /* .lang-selector {
     width: 176px;
-  }
+  } */
 }
 
 @media screen and (max-width: 576px) {

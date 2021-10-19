@@ -1,6 +1,6 @@
 :root {
-  --flex-gap-rest-x: 0.75rem;
-  --flex-gap-rest-y: 3rem;
+  --flex-gap-rest-x: 10px;
+  --flex-gap-rest-y: 50px;
 }
 
 .hero {
@@ -20,12 +20,12 @@
 }
 
 .tabs-labels {
-  margin-top: 2rem;
-  margin-bottom: 2rem;
+  margin-top: 30px;
+  margin-bottom: 30px;
   display: flex;
   flex-flow: row wrap;
-  column-gap: 2.5rem;
-  row-gap: 1rem;
+  column-gap: 40px;
+  row-gap: 15px;
 }
 
 .tabs > input[type='radio'] {
@@ -55,7 +55,7 @@
 
 .tab-content {
   display: none;  
-  padding-top: 2rem;
+  padding-top: 30px;
 }
 
 #tab-btn-1:checked ~ .tabs-contents #menu-1,
@@ -78,7 +78,7 @@
 }
 
 h2 {
-  margin-bottom: 2rem;
+  margin-bottom: 30px;
 }
 
 .dish-cards {
@@ -102,11 +102,12 @@ h2 {
 }
 
 .dish-desc {
-  padding: 1rem;
+  padding: 15px;
   width: 100%;
   display: flex;
   flex-flow: column;
-  justify-content: space-between;
+  justify-content: space-between;  
+  flex-grow: 2;
 }
 
 .dish-name-sub {
@@ -123,7 +124,7 @@ h2 {
 }
 
 .dish-pic {
-  height: 100%;
+  object-fit: cover;  
 }
 
 @media screen and (max-width: 768px) {
