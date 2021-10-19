@@ -2,9 +2,7 @@
   box-shadow: 0 0 6px var(--color-gray);
   position: sticky;
   top: 0px;
-  background-color: var(--color-light);
-  padding-top: 15px;
-  padding-bottom: 15px;
+  background-color: var(--color-light);  
   z-index: 100;
   max-width: 100%;
 }
@@ -13,6 +11,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  height: 72px;
 }
 
 .nav-logo {

@@ -33,6 +33,8 @@
   <div class="hero">
     <div class="hero-info"></div>
   </div>
+  
+  <a id="menu"></a>
 
   <div class="tabs">
 
@@ -467,9 +469,7 @@
     </div>
   </div>
 
-  <div class="footer">
-
-    <div id="scrollerUnHidePoint"></div>
+  <div class="footer">    
 
     <div class="container">
       <img class="footer-logo" src="assets/footer/white-logo.svg"
@@ -477,10 +477,13 @@
 
       <hr class="footer-hr">
 
+      <div id="scrollerUnHidePoint"></div>
+
       <div class="footer-links">
 
         <div class="footer-links-column">
           <div class="lang-selector-container">
+            <img src="assets/footer/world.svg" alt="Language">
             <select name="country" id="lang-selector" class="lang-selector">
               <option value="ru">Русский</option>
               <option value="en">English</option>
@@ -552,7 +555,7 @@
         </div>
       </div>
 
-      <a href="#" class="scroller" id="scroller">
+      <a href="#menu" class="scroller" id="scroller">
         <div class="scroller-area"></div>
       </a>
 
@@ -563,5 +566,6 @@
 </body>
 
 <script src="js/scroller.js"></script>
+<script src="js/menu.js"></script>
 
 </html>

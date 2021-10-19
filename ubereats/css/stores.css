@@ -1,17 +1,11 @@
-:root {
-  --flex-gap-stores-y: 1rem;
-  --flex-gap-stores-x: 0.5rem;
-}
-
 .stores-cards {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-between;
-  gap: var(--flex-gap-stores-y) var(--flex-gap-stores-x);
+  display: grid;  
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 16px;
+  /* gap: var(--flex-gap-stores-y) var(--flex-gap-stores-x); */
 }
 
-.stores-card {
-  flex-basis: calc((100% - 2 * var(--flex-gap)) / 3);
+.stores-card {  
   text-decoration: none;
   color: var(--color-dark);
 }
@@ -55,13 +49,13 @@
 }
 
 @media screen and (max-width: 768px) {
-  .stores-card {
-    flex-basis: calc(50% - 0.5rem);
+  .stores-cards {
+    grid-template-columns: 1fr 1fr;
   }
 }
 
 @media screen and (max-width: 576px) {
-  .stores-card {
-    flex-basis: 100%;
+  .stores-cards {
+    grid-template-columns: 1fr;
   }
 }
