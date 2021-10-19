@@ -73,17 +73,17 @@
 #tab-btn-5:checked ~ .tabs-contents #menu-5,
 #tab-btn-6:checked ~ .tabs-contents #menu-6 {
   display: block;
-  animation: fadein 0.3s ease-out;
+  animation: fadein 0.1s ease-out;  
 }
 
 @keyframes fadein {
   from {
-    /* opacity: 0; */
-    transform: translateX(100%);
+    opacity: 0;
+    /* transform: translateX(100%); */
   }
   to {
-    /* opacity: 1; */
-    transform: translateX(0%);
+    opacity: 1;
+    /* transform: translateX(0%); */
   }
 }
 
