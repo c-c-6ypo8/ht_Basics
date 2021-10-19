@@ -1,6 +1,6 @@
 :root {
   --flex-gap-rest-x: 0.75rem;
-  --flex-gap-rest-y: 3rem;  
+  --flex-gap-rest-y: 3rem;
 }
 
 .hero {
@@ -13,8 +13,15 @@
   margin: 0 auto;
 }
 
-.tabs {
-  margin-top: 2rem;  
+.hr-menu {
+  background-color: var(--color-lightgray);
+  height: 1px;
+  flex-basis: 100%;
+}
+
+.tabs-labels {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
   display: flex;
   flex-flow: row wrap;
   column-gap: 2.5rem;
@@ -25,50 +32,49 @@
   display: none;
 }
 
-.tabs:last-child {
-  flex-basis: 100%;
+.tabs-labels > label {
+  text-align: center;
+  vertical-align: middle;
+  user-select: none;
+  transition: 0.15s ease-out;
+  cursor: pointer;
 }
 
-.tab-content {  
-  display: none;
-  margin-top: 2rem;
+.tabs-labels > label:hover {
+  color: var(--color-darkgray);
+}
+
+#tab-btn-1:checked ~ .tabs-labels #tab-btn-label-1,
+#tab-btn-2:checked ~ .tabs-labels #tab-btn-label-2,
+#tab-btn-3:checked ~ .tabs-labels #tab-btn-label-3,
+#tab-btn-4:checked ~ .tabs-labels #tab-btn-label-4,
+#tab-btn-5:checked ~ .tabs-labels #tab-btn-label-5,
+#tab-btn-6:checked ~ .tabs-labels #tab-btn-label-6 {
+  color: #4ca149;
+}
+
+.tab-content {
+  display: none;  
   padding-top: 2rem;
-  border-top: 1px solid var(--color-lightgray);
 }
 
-#tab-btn-1:checked ~ .tab-contents #menu-1,
-#tab-btn-2:checked ~ .tab-contents #menu-2,
-#tab-btn-3:checked ~ .tab-contents #menu-3,
-#tab-btn-4:checked ~ .tab-contents #menu-4,
-#tab-btn-5:checked ~ .tab-contents #menu-5,
-#tab-btn-6:checked ~ .tab-contents #menu-6 {
-  display: block;  
+#tab-btn-1:checked ~ .tabs-contents #menu-1,
+#tab-btn-2:checked ~ .tabs-contents #menu-2,
+#tab-btn-3:checked ~ .tabs-contents #menu-3,
+#tab-btn-4:checked ~ .tabs-contents #menu-4,
+#tab-btn-5:checked ~ .tabs-contents #menu-5,
+#tab-btn-6:checked ~ .tabs-contents #menu-6 {
+  display: block;
   animation: fadein 1s;
 }
 
 @keyframes fadein {
   from {
-      opacity:0;
+    opacity: 0;
   }
   to {
-      opacity:1;
+    opacity: 1;
   }
-}
-
-.tabs > label {
-  text-align: center;
-  vertical-align: middle;
-  user-select: none;
-  transition: 0.15s ease-out;  
-  cursor: pointer;  
-}
-
-.tabs > label:hover {
-  color: var(--color-darkgray);
-}
-
-.tabs > input[type='radio']:checked + label {
-  color: #4ca149;
 }
 
 h2 {
@@ -127,12 +133,5 @@ h2 {
 
   .dish-cards {
     gap: calc(var(--flex-gap-rest-y) / 2);
-  }
-
-  .tabs {
-    height: calc(
-      var(--card-rest-height) * 6 + var(--flex-gap-rest-y) * 5 +
-        var(--tabs-margin-top)
-    );
   }
 }
