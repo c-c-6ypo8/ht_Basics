@@ -1,6 +1,6 @@
 :root {
-  --flex-gap-rest-x: 10px;
-  --flex-gap-rest-y: 50px;
+  --grid-gap-rest-x: 10px;
+  --grid-gap-rest-y: 50px;
 }
 
 .hero {
@@ -94,7 +94,7 @@ h2 {
 .dish-cards {
   display: grid;   
   grid-template-columns: 1fr 1fr;
-  grid-gap: var(--flex-gap-rest-y) var(--flex-gap-rest-x);
+  grid-gap: var(--grid-gap-rest-y) var(--grid-gap-rest-x);
 }
 
 .dish-card {
@@ -138,6 +138,6 @@ h2 {
 @media screen and (max-width: 768px) {  
   .dish-cards {
     grid-template-columns: 1fr;
-    grid-gap: calc(var(--flex-gap-rest-y) / 2);
+    grid-gap: calc(var(--grid-gap-rest-y) / 2);
   }
 }
