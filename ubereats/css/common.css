@@ -83,6 +83,10 @@ a {
 }
 
 .hidden {
+  opacity: 0;
+}
+
+.removed {
   display: none;
 }
 
@@ -96,5 +100,6 @@ a {
   .scroller-area {
     width: var(--scroller-size-small);
     height: var(--scroller-size-small);
+    display: block;
   }
 }

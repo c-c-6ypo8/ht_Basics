@@ -195,20 +195,21 @@ h2 {
   object-fit: cover;
 }
 
-.tab-name-baloon-container {
+.tab-name-baloon-container {    
+  position: sticky;
+  bottom: 0px;
   display: flex;
   justify-content: center;
+  padding: 10px 0;
 }
 
-.tab-name-baloon {
-  opacity: 1;
-  position: fixed;
-  top: 87px;
+.tab-name-baloon {   
+  font-size: 20px;
   color: var(--color-light);
   background-color: var(--color-main);
-  border-radius: 20px;
-  padding: 5px 15px;
-  transition: opacity 0.8s;
+  border-radius: 30px;
+  padding: 10px 30px;
+  transition: opacity 0.5s;
 }
 
 /* * * * * * * * * * MEDIA REQUESTS * * * * * * * * * */

@@ -27,8 +27,8 @@ const activateMenuRadio = (direction) => {
   tabsButtons[buttonNum].checked = true
 }
 
-//TODO: make created tags clearing
 // Меняет направление анимации появления меню для всех элементов, кроме текущего
+// Добавляет стиль путём создания в конце DOM-дерева элемента с тегом "style"
 const setTranslateX = (direction) => {
   const sheet = document.createElement('style')
   sheet.innerHTML = `
@@ -45,9 +45,9 @@ const setTranslateX = (direction) => {
 }
 
 // Показывает всплывающее сообщение с именем текущей вкладки меню
-var currentBaloonId;
+var currentBaloonId
 
-const showCurrentTabNameBaloon = (tabNum) => {  
+const showCurrentTabNameBaloon = (tabNum) => {
   const thisBaloonId = Math.random(1000)
   currentBaloonId = thisBaloonId
   baloon.classList.remove('hidden')
@@ -56,7 +56,7 @@ const showCurrentTabNameBaloon = (tabNum) => {
     if (currentBaloonId == thisBaloonId) {
       baloon.classList.add('hidden')
     }
-  }, 2000)  
+  }, 2000)
 }
 
 const tabNameIsHidden = (tabNum) => {

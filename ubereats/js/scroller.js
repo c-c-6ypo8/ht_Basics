@@ -16,9 +16,9 @@ const setScrollVisibility = (unHidePos) => {
     unHidePosTop = unHidePos
   }
   if (scrollPosTop() + window.innerHeight > unHidePos) {
-    scroller.classList.remove('hidden')
+    scroller.classList.remove('removed')
   } else {
-    scroller.classList.add('hidden')
+    scroller.classList.add('removed')
   }
 }
 
@@ -38,5 +38,4 @@ scroller.addEventListener('click', () => {
   menuAnchor.scrollIntoView()
 })
 
-scroller.classList.add('hidden')
-
+scroller.classList.add('removed')
