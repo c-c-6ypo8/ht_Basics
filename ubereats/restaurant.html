@@ -31,11 +31,13 @@
   </div>
 
   <div class="hero">
-    <div class="hero-info">
-      <h1>Трактир «Пушкин»</h1>
-      <div class="hero-info-footer">
-        <div class="store-type">₽₽₽ • Европейская</div>
-        <div class="hero-info-footer-time">40 - 50 мин</div>
+    <div class="container">
+      <div class="hero-info">
+        <h1>Трактир «Пушкин»</h1>
+        <div class="hero-info-footer">
+          <div class="store-type">₽₽₽ • Европейская</div>
+          <div class="hero-info-footer-time">40 - 50 мин</div>
+        </div>
       </div>
     </div>
   </div>
@@ -44,20 +46,21 @@
 
   <div class="tabs">
 
-    <input type="radio" name="tab-btn" id="tab-btn-1" value="" checked>
-    <input type="radio" name="tab-btn" id="tab-btn-2" value="">
-    <input type="radio" name="tab-btn" id="tab-btn-3" value="">
-    <input type="radio" name="tab-btn" id="tab-btn-4" value="">
-    <input type="radio" name="tab-btn" id="tab-btn-5" value="">
-    <input type="radio" name="tab-btn" id="tab-btn-6" value="">
+    <input type="radio" name="tab-btn" data-num=0 id="tab-btn-1" value=""
+      checked>
+    <input type="radio" name="tab-btn" data-num=1 id="tab-btn-2" value="">
+    <input type="radio" name="tab-btn" data-num=2 id="tab-btn-3" value="">
+    <input type="radio" name="tab-btn" data-num=3 id="tab-btn-4" value="">
+    <input type="radio" name="tab-btn" data-num=4 id="tab-btn-5" value="">
+    <input type="radio" name="tab-btn" data-num=5 id="tab-btn-6" value="">
 
     <div class="tabs-labels container">
-      <label id="tab-btn-label-1" for="tab-btn-1">Закуски</label>
-      <label id="tab-btn-label-2" for="tab-btn-2">Салаты</label>
-      <label id="tab-btn-label-3" for="tab-btn-3">Супы</label>
-      <label id="tab-btn-label-4" for="tab-btn-4">Горячие блюда</label>
-      <label id="tab-btn-label-5" for="tab-btn-5">Гарниры</label>
-      <label id="tab-btn-label-6" for="tab-btn-6">Десерты</label>
+      <label id="tab-btn-label-1" data-num=0 for="tab-btn-1">Закуски</label>
+      <label id="tab-btn-label-2" data-num=1 for="tab-btn-2">Салаты</label>
+      <label id="tab-btn-label-3" data-num=2 for="tab-btn-3">Супы</label>
+      <label id="tab-btn-label-4" data-num=3 for="tab-btn-4">Горячие блюда</label>
+      <label id="tab-btn-label-5" data-num=4 for="tab-btn-5">Гарниры</label>
+      <label id="tab-btn-label-6" data-num=5 for="tab-btn-6">Десерты</label>
     </div>
 
     <div class="hr-menu"></div>
@@ -65,7 +68,10 @@
     <div class="tabs-contents container">
 
       <div id="menu-1" class="tab-content">
-        <h2>Закуски</h2>
+        <div class="header">
+          <h2>Закуски</h2>
+          <div class="header-underline">_______</div>
+        </div>
         <div class="dish-cards">
           <a href="#" class="dish-card">
             <div class="dish-desc">
@@ -133,7 +139,10 @@
       </div>
 
       <div id="menu-2" class="tab-content">
-        <h2>Салаты</h2>
+        <div class="header">
+          <h2>Салаты</h2>
+          <div class="header-underline">_______</div>
+        </div>
         <div class="dish-cards">
           <a href="#" class="dish-card">
             <div class="dish-desc">
@@ -201,7 +210,10 @@
       </div>
 
       <div id="menu-3" class="tab-content">
-        <h2>Супы</h2>
+        <div class="header">
+          <h2>Супы</h2>
+          <div class="header-underline">_______</div>
+        </div>
         <div class="dish-cards">
           <a href="#" class="dish-card">
             <div class="dish-desc">
@@ -212,7 +224,7 @@
               <div class="dish-price">390</div>
             </div>
             <img class="dish-pic" src="assets/restaurant/s5.jpg"
-              alt="Малосольная сёмга">img
+              alt="Малосольная сёмга">
           </a>
           <a href="#" class="dish-card">
             <div class="dish-desc">
@@ -269,7 +281,10 @@
       </div>
 
       <div id="menu-4" class="tab-content">
-        <h2>Горячие блюда</h2>
+        <div class="header">
+          <h2>Горячие блюда</h2>
+          <div class="header-underline">_______</div>
+        </div>
         <div class="dish-cards">
           <a href="#" class="dish-card">
             <div class="dish-desc">
@@ -337,7 +352,10 @@
       </div>
 
       <div id="menu-5" class="tab-content">
-        <h2>Гарниры</h2>
+        <div class="header">
+          <h2>Гарниры</h2>
+          <div class="header-underline">_______</div>
+        </div>
         <div class="dish-cards">
           <a href="#" class="dish-card">
             <div class="dish-desc">
@@ -405,12 +423,16 @@
       </div>
 
       <div id="menu-6" class="tab-content">
-        <h2>Десерты</h2>
+        <div class="header">
+          <h2>Десерты</h2>
+          <div class="header-underline">_______</div>
+        </div>
         <div class="dish-cards">
           <a href="#" class="dish-card">
             <div class="dish-desc">
               <div class="dish-title">
-                <div class="dish-name">Сельдь на бородинском хлебе</div>
+                <div class="dish-name">Сельдь на бородинском хлебе
+                </div>
                 <div class="dish-name-sub">С яйцом и огурцом</div>
               </div>
               <div class="dish-price">240</div>
@@ -473,17 +495,22 @@
       </div>
 
     </div>
+
+    <div class="tab-name-baloon-container">
+      <div class="tab-name-baloon hidden"></div>
+    </div>
+
   </div>
 
   <div class="footer">
+
+    <div id="scrollerUnHidePoint"></div>
 
     <div class="container">
       <img class="footer-logo" src="assets/footer/white-logo.svg"
         alt="UberEats">
 
       <hr class="footer-hr">
-
-      <div id="scrollerUnHidePoint"></div>
 
       <div class="footer-links">
 
@@ -521,9 +548,11 @@
 
         <div class="footer-links-column">
           <div class="footer-link"><a href="#">Об UberEats</a></div>
-          <div class="footer-link"><a href="#">Станьте партнёром по доставке</a>
+          <div class="footer-link"><a href="#">Станьте партнёром по
+              доставке</a>
           </div>
-          <div class="footer-link"><a href="#">Станьте партнёром-рестораном</a>
+          <div class="footer-link"><a href="#">Станьте
+              партнёром-рестораном</a>
           </div>
         </div>
 
@@ -561,9 +590,11 @@
         </div>
       </div>
 
-      <a href="#menu" class="scroller" id="scroller">
-        <div class="scroller-area"></div>
-      </a>
+      <div class="container">
+        <a href="#menu" class="scroller" id="scroller">
+          <div class="scroller-area"></div>
+        </a>
+      </div>
 
     </div>
 
@@ -572,6 +603,7 @@
 </body>
 
 <script src="js/scroller.js"></script>
+<script src="js/swiped-events.js"></script>
 <script src="js/menu.js"></script>
 
 </html>

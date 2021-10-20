@@ -22,16 +22,21 @@ const setScrollVisibility = (unHidePos) => {
   }
 }
 
-document.body.onload = () => {
-  setScrollVisibility()  
-}
+document.body.addEventListener('load', () => {
+  setScrollVisibility()
+})
 
-window.onresize = () => {
-  setScrollVisibility()  
-}
+window.addEventListener('resize', () => {
+  setScrollVisibility()
+})
 
-window.onscroll = () => {
-  setScrollVisibility(unHidePosTop)  
-}
+window.addEventListener('scroll', () => {
+  setScrollVisibility(unHidePosTop)
+})
+
+scroller.addEventListener('click', () => {
+  menuAnchor.scrollIntoView()
+})
 
 scroller.classList.add('hidden')
+

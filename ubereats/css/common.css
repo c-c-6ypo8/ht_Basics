@@ -62,14 +62,14 @@ a {
 
 .scroller-area {
   position: fixed;
-  bottom: 1.5rem;
-  right: 1rem;
+  bottom: calc(var(--container-padding-x) * 3);
+  right: var(--container-padding-x);
   z-index: 2;
   width: var(--scroller-size);
   height: var(--scroller-size);
   background: var(--color-main) url(../assets/arrow-up.svg) no-repeat;
   background-position: center center;
-  border-radius: 0.33rem;
+  border-radius: 5px;
   display: block;
   transition: 0.3s;
 }
