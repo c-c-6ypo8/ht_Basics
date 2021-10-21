@@ -1,9 +1,9 @@
-:root {  
+:root {
   --color-main: #5cbc61;
   --color-dark: #262626;
   --color-light: white;
-  --color-lightergray: #f9f9f9;  
-  --color-lightgray: #efefef;  
+  --color-lightergray: #f9f9f9;
+  --color-lightgray: #efefef;
   --color-gray: #cacaca;
   --color-darkgray: #8a8a8a;
   --color-darkergray: #5c5c5c;
@@ -34,7 +34,7 @@ h6 {
 a {
   text-decoration: none;
   color: inherit;
-  transition: 0.3s;
+  transition: color 0.3s;
 }
 
 .container {
@@ -45,9 +45,9 @@ a {
 .button {
   border: 1px solid var(--color-gray);
   background-color: var(--color-light);
-  padding: 0.65rem 1.3rem;
+  padding: 10px 20px;
   border-radius: var(--border-radius);
-  transition: 0.3s;
+  transition: color 0.3s;
 }
 
 .button:hover {
@@ -71,11 +71,11 @@ a {
   background-position: center center;
   border-radius: 5px;
   display: block;
-  transition: 0.3s;
+  transition: color 0.3s;
 }
 
 .scroller-area:hover {
-  background-color: #4ccf53;
+  background-color: #3da142;
 }
 
 .scroller-area:active {
@@ -101,5 +101,11 @@ a {
     width: var(--scroller-size-small);
     height: var(--scroller-size-small);
     display: block;
+  }
+}
+
+@media screen and (max-width: 270px) {
+  .button {
+    padding: 5px 10px;
   }
 }

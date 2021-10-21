@@ -7,13 +7,13 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="14"
-   height="8"
-   viewBox="0 0 14 8"
+   width="8"
+   height="14"
+   viewBox="0 0 8 14"
    fill="none"
    version="1.1"
    id="svg4"
-   sodipodi:docname="arrow-downt.svg"
+   sodipodi:docname="arrow-right.svg"
    inkscape:version="1.0.1 (3bc2e813f5, 2020-09-07)">
   <metadata
      id="metadata10">
@@ -44,17 +44,21 @@
      showgrid="false"
      inkscape:pagecheckerboard="true"
      inkscape:zoom="45.254834"
-     inkscape:cx="6.8437364"
-     inkscape:cy="5.4886584"
+     inkscape:cx="1.6067268"
+     inkscape:cy="7.0354545"
      inkscape:window-x="54"
      inkscape:window-y="-8"
      inkscape:window-maximized="1"
-     inkscape:current-layer="svg4" />
+     inkscape:current-layer="svg4"
+     inkscape:document-rotation="0" />
   <g
-     id="if_icon-ios7-arrow-back_211686">
+     id="if_icon-ios7-arrow-back_211686"
+     transform="rotate(-90,7.00858,7.0017686)"
+     style="fill:#000000">
     <path
        id="Shape"
        d="M 1.4175,0 0,1.34583 7,8 14,1.34583 12.5825,0 7,5.30417 Z"
-       fill="#ffffff" />
+       fill="#ffffff"
+       style="fill:#000000" />
   </g>
 </svg>

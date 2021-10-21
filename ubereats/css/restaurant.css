@@ -54,12 +54,47 @@
   margin: 30px 0;
 }
 
-.header > h2 {
+.header ~ h2 {
   margin: 0;
 }
 
 .header-underline {
   display: none;
+}
+
+.header-with-arrows {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.arrow-right,
+.arrow-left {
+  color: var(--color-dark);
+  display: none;  
+}
+
+.arrow-left-container,
+.arrow-right-container {  
+  cursor: pointer;
+  flex-basis: 25%;  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+}
+
+/* .arrow-left-container:hover > .arrow-left {  
+  src: "../assets/arrow-left-hover.svg"
+}
+
+.arrow-right-container:hover > .arrow-right {
+  src: "../assets/arrow-right-hover.svg"
+} */
+
+.arrow-left-container:active > .arrow-left,
+.arrow-right-container:active > .arrow-right {  
+  opacity: 0.3;  
 }
 
 #menu {
@@ -108,6 +143,7 @@
 .tab-content {
   display: none;
   padding-top: 30px;
+  padding-bottom: 50px;
 }
 
 #tab-btn-1:checked ~ .tabs-contents #menu-1,
@@ -195,24 +231,35 @@ h2 {
   object-fit: cover;
 }
 
-.tab-name-baloon-container {    
-  position: sticky;
-  bottom: 0px;
+.tab-name-baloon-container {
+  position: fixed;
+  width: 100%;
+  z-index: 9999;
+  top: 72px;
   display: flex;
-  justify-content: center;
   padding: 10px 0;
+  pointer-events: none;
 }
 
-.tab-name-baloon {   
+.tab-name-baloon {
+  position: sticky;
   font-size: 20px;
   color: var(--color-light);
-  background-color: var(--color-main);
+  background-color: var(--color-dark);
   border-radius: 30px;
-  padding: 10px 30px;
+  padding: 8px 16px;
+  margin-left: 10px;
   transition: opacity 0.5s;
 }
 
 /* * * * * * * * * * MEDIA REQUESTS * * * * * * * * * */
+
+@media screen and (min-width: 1201px) {
+  #scrollerUnHidePoint {
+    position: relative;
+    top: 75px;
+  }
+}
 
 @media screen and (max-width: 768px) {
   .dish-cards {
@@ -232,16 +279,13 @@ h2 {
   }
 }
 
-@media screen and (min-width: 1201px) {
-  #scrollerUnHidePoint {
-    position: relative;
-    top: 75px;
-  }
-}
-
 @media screen and (max-width: 630px) {
   .tabs-labels {
     justify-content: center;
+  }
+
+  .tabs-labels > label:not(#tab-btn-label-4) {
+    flex-basis: calc((100% / 6));
   }
 }
 
@@ -252,12 +296,13 @@ h2 {
 }
 
 @media screen and (max-width: 320px) {
-  .nav-cabinet > .icon-link {
+  /* .nav-cabinet > .icon-link {
     display: none;
-  }
+  } */
 
   .nav-element {
-    margin-right: 0;
+    margin-left: 10px;
+    margin-right: 5px;
   }
 
   .dish-cards {
@@ -329,11 +374,20 @@ h2 {
   }
 
   .tab-content {
-    padding-top: 93px;
+    padding-top: 73px;
   }
 
   .tab-content > h2 {
     text-align: center;
+  }
+
+  .tab-name-baloon-container {
+    justify-content: center;
+  }
+
+  .tab-name-baloon {
+    font-size: 16px;
+    padding: 7px 14px;
   }
 
   .header {
@@ -342,10 +396,19 @@ h2 {
 
   .header-underline {
     display: block;
-    margin-top: -5px;
+    margin-top: -35px;
   }
 
   .dish-pic {
     border-radius: var(--border-radius) 0 0 0;
+  }
+
+  .arrow-container {
+    display: block;
+  }
+
+  .arrow-right,
+  .arrow-left {
+    display: block;
   }
 }

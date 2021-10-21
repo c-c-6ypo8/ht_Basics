@@ -5,6 +5,14 @@ const tabsButtons = document.getElementsByName('tab-btn')
 const menuLabels = document.getElementsByClassName('tabs-labels')[0].children
 const headers = document.getElementsByClassName('header')
 const baloon = document.getElementsByClassName('tab-name-baloon')[0]
+const arrowsLeft = document.getElementsByClassName('arrow-left')
+const arrowsRight = document.getElementsByClassName('arrow-right')
+const arrowLeftContainers = document.getElementsByClassName(
+  'arrow-left-container',
+)
+const arrowRightContainers = document.getElementsByClassName(
+  'arrow-right-container',
+)
 
 // Определяет номер активной радио-кнопки
 const getActiveTabNum = () => {
@@ -50,13 +58,13 @@ var currentBaloonId
 const showCurrentTabNameBaloon = (tabNum) => {
   const thisBaloonId = Math.random(1000)
   currentBaloonId = thisBaloonId
-  baloon.classList.remove('hidden')
+  baloon.classList.remove('hidden', 'removed')
   baloon.innerHTML = menuLabels[+tabNum].innerHTML
   setTimeout(() => {
     if (currentBaloonId == thisBaloonId) {
       baloon.classList.add('hidden')
     }
-  }, 2000)
+  }, 1250)
 }
 
 const tabNameIsHidden = (tabNum) => {
@@ -65,6 +73,18 @@ const tabNameIsHidden = (tabNum) => {
   } else {
     return false
   }
+}
+
+for (let container of arrowLeftContainers) {
+  container.addEventListener('click', () => {
+    activateMenuRadio('right')
+  })
+}
+
+for (let container of arrowRightContainers) {
+  container.addEventListener('click', () => {
+    activateMenuRadio('left')
+  })
 }
 
 tabsContents.addEventListener('swiped-left', () => {

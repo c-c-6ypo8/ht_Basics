@@ -1,4 +1,5 @@
 const scroller = document.getElementById('scroller')
+const menu = document.getElementById('menu')
 const scrollerUnHidePoint = document.getElementById('scrollerUnHidePoint')
 var unHidePosTop
 
@@ -15,7 +16,10 @@ const setScrollVisibility = (unHidePos) => {
     unHidePos = unHidePointPosTop()
     unHidePosTop = unHidePos
   }
-  if (scrollPosTop() + window.innerHeight > unHidePos) {
+  if (
+    scrollPosTop() + window.innerHeight > unHidePos &&
+    (menu == undefined || menu.getBoundingClientRect().bottom + 50 < 0)
+  ) {
     scroller.classList.remove('removed')
   } else {
     scroller.classList.add('removed')
@@ -34,8 +38,14 @@ window.addEventListener('scroll', () => {
   setScrollVisibility(unHidePosTop)
 })
 
-scroller.addEventListener('click', () => {
-  menuAnchor.scrollIntoView()
-})
+if (menu) {
+  scroller.addEventListener('click', () => {
+    menu.scrollIntoView()
+  })
+} else {
+  scroller.addEventListener('click', () => {
+    document.body.scrollIntoView()
+  })
+}
 
 scroller.classList.add('removed')
