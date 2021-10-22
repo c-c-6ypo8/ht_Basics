@@ -2,7 +2,12 @@
   display: grid;  
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 16px;
-  /* gap: var(--flex-gap-stores-y) var(--flex-gap-stores-x); */
+  margin-bottom: 50px;
+}
+
+.stores-header {
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
 
 .stores-card {  

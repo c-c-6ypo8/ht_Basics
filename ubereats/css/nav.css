@@ -1,5 +1,5 @@
 .nav {
-  box-shadow: 0 0 6px var(--color-gray);
+  box-shadow: 0 0 16px var(--color-gray);
   position: sticky;
   top: 0px;
   background-color: var(--color-light);  
