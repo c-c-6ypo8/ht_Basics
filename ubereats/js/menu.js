@@ -77,12 +77,14 @@ const tabNameIsHidden = (tabNum) => {
 
 for (let container of arrowLeftContainers) {
   container.addEventListener('click', () => {
+    setTranslateX('left')
     activateMenuRadio('right')
   })
 }
 
 for (let container of arrowRightContainers) {
   container.addEventListener('click', () => {
+    setTranslateX('right')
     activateMenuRadio('left')
   })
 }
