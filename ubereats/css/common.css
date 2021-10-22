@@ -47,7 +47,7 @@ a {
   background-color: var(--color-light);
   padding: 10px 20px;
   border-radius: var(--border-radius);
-  transition: color 0.3s;
+  transition: background-color 0.3s;  
 }
 
 .button:hover {
