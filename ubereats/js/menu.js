@@ -3,7 +3,6 @@ const tabsContents = document.getElementsByClassName('tabs-contents')[0]
 const tabContent = document.getElementsByClassName('tab-content')
 const tabsButtons = document.getElementsByName('tab-btn')
 const menuLabels = document.getElementsByClassName('tabs-labels')[0].children
-const headers = document.getElementsByClassName('header')
 const baloon = document.getElementsByClassName('tab-name-baloon')[0]
 const arrowsLeft = document.getElementsByClassName('arrow-left')
 const arrowsRight = document.getElementsByClassName('arrow-right')
@@ -13,6 +12,7 @@ const arrowLeftContainers = document.getElementsByClassName(
 const arrowRightContainers = document.getElementsByClassName(
   'arrow-right-container',
 )
+const headerWithArrowsName = document.getElementById('header-with-arrows-name')
 
 // Определяет номер активной радио-кнопки
 const getActiveTabNum = () => {
@@ -67,8 +67,12 @@ const showCurrentTabNameBaloon = (tabNum) => {
   }, 1250)
 }
 
-const tabNameIsHidden = (tabNum) => {
-  if (headers[tabNum].getBoundingClientRect().top - 58 < 0) {
+const showCurrentTabNameHeader = (tabNum) => {
+  headerWithArrowsName.innerHTML = menuLabels[+tabNum].innerHTML
+}
+
+const tabNameIsHidden = () => {
+  if (tabsContents.getBoundingClientRect().top < 0) {
     return true
   } else {
     return false
@@ -79,6 +83,7 @@ for (let container of arrowLeftContainers) {
   container.addEventListener('click', () => {
     setTranslateX('left')
     activateMenuRadio('right')
+    showCurrentTabNameHeader(getActiveTabNum())
   })
 }
 
@@ -86,6 +91,7 @@ for (let container of arrowRightContainers) {
   container.addEventListener('click', () => {
     setTranslateX('right')
     activateMenuRadio('left')
+    showCurrentTabNameHeader(getActiveTabNum())
   })
 }
 
@@ -96,6 +102,7 @@ tabsContents.addEventListener('swiped-left', () => {
   if (tabNameIsHidden(tabNum)) {
     showCurrentTabNameBaloon(tabNum)
   }
+  showCurrentTabNameHeader(tabNum)
 })
 
 tabsContents.addEventListener('swiped-right', () => {
@@ -105,6 +112,7 @@ tabsContents.addEventListener('swiped-right', () => {
   if (tabNameIsHidden(tabNum)) {
     showCurrentTabNameBaloon(tabNum)
   }
+  showCurrentTabNameHeader(tabNum)
 })
 
 // Реакция на нажатие кнопки меню
